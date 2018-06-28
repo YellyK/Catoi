@@ -1,0 +1,104 @@
+#Yellow1 {background-color: #FFCA28;}
+#Yellow2 {background-color: #FBD771;}
+#Pink {background-color: #F35269;}
+#Black {background-color: #212121;}
+#White {background-color: #FAFAFA;}
+#Type {color:#393939;}
+
+body {
+    background-color: #FAFAFA;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #393939; 
+    line-height: 30px;
+}
+
+.huge {
+    font-size: 50px;
+    font-weight: 500;
+    padding: 15px;
+}
+
+/*Link*/
+
+a {
+  color: #FFCA28;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #DFB123;
+  text-decoration: none;
+}
+
+/*Buttom*/
+
+.btn-link-1 {
+    color: #FAFAFA;
+    background-color: #F35269;
+    border-color: #F35269;
+}
+
+.btn-link-1:focus,
+.btn-link-1.focus,
+.btn-link-1:hover {
+  color: #FAFAFA;
+  background-color: #DB4A5F;
+  border-color: #DB4A5F;
+}
+
+.btn-link-2 {
+    color: #393939;
+    background-color: #E0E0E0;
+    border-color: #E0E0E0;
+}
+
+.btn-link-2:focus,
+.btn-link-2.focus,
+.btn-link-2:hover {
+  color: #393939;
+  background-color: #CACACA;
+  border-color: #CACACA;
+}
+
+.btn-sq {
+    width: 70px !important;
+    height: 70px !important;
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    padding: 10px 10px;
+    border-radius: 10px;
+    
+}
+
+.btn-link-3 {
+    color: #FAFAFA;
+    background-color: #474747;
+    border-color: #474747;
+}
+
+.btn-link-3:focus,
+.btn-link-3.focus,
+.btn-link-3:hover {
+  color: #FAFAFA;
+  background-color: #212121;
+  border-color: #212121;
+}
+
+.line {
+    border-top: 1px solid #E0E0E0; 
+    padding-top: 20px; 
+}
+
+
+ footer {
+      background-color: none;
+      color: #BDBDBD;
+      padding: 15px;
+      text-align: center;
+ }
+
+.navbar-inverse {
+ 	border-radius: 0px;
+ }

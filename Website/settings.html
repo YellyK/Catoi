@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="img/Logo-B05.png">
+        <title>CAToi - Settings</title>
+     
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="font-awesome_new/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim|Montserrat:400,500,700">
+        <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+        
+        <!-- Custom CSS-->
+        <link rel="stylesheet" href="css/catoi.css">
+        <link rel="stylesheet" href="css/content-css.css">       
+    
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    
+    <body>
+
+    	<!-- navigation -->
+    	<nav class="navbar navbar-inverse">
+    		<div class="container-fluid">
+    			<div class="navbar-header">
+				    <a class="navbar-brand" href="#" title="Smart Interactive Cat Toy">
+				        <img style="max-width:120px;"
+				             src="img/Logo-W-02_sm.png">
+				    </a>
+				</div>   
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="fa-stack">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-user fa-stack-1x fa-inverse icon-user"></i>
+                            </span>
+                            &nbsp;Yelly
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="settings.html"><i class="fa fa-cog fa-fw"></i>&nbsp;Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#"><i class="fa fa-power-off fa-fw"></i>&nbsp;Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>            
+    		</div>
+    	</nav>
+        
+        <!-- Menu bar -->
+         <div class="navbar navbar-default menu-bar">
+            <div class="container">
+                <div class="col-md-12" style="padding-left: 250px;">
+                    <ul class="nav navbar-nav">
+                        <li class="menu-item">
+                            <a href="db.html"><i class="fa fa-chart-bar"></i>&nbsp;&nbsp;Dashboard</a>
+                        </li>
+                        <li class="menu-item">
+<!--                            <a href="#feedplay" data-toggle="modal"><i class="fa fa-paw"></i>&nbsp;&nbsp;Monitor</a>-->
+                            <a href="feed_play.html"><i class="fa fa-paw"></i>&nbsp;&nbsp;Monitor</a>
+                        </li>
+                         <li class="menu-item">
+                            <a href="gallery.html"><i class="fa fa-images"></i>&nbsp;&nbsp;Gallery</a>
+                        </li>
+                        <li class="menu-item active">
+                            <a href="#"><i class="fa fa-cog"></i>&nbsp;&nbsp;Settings</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="help.html"><i class="fa fa-question-circle"></i>&nbsp;&nbsp;Help</a>
+                        </li>
+                    </ul>
+                </div>          
+            </div> 
+        </div> <!-- /Menu bar -->
+        
+        <!-- Content --> 
+        <div class="container-fluid">
+            <!-- Header -->
+            <div class="row">
+                <div class="col-md-12">   
+                    <h2 class="page-header"><i class="fa fa-chart-bar"></i> Settings&nbsp;&nbsp;<small></small></h2>
+                </div> 
+            </div> <!-- /Header -->
+            
+            <div class="row">
+                <!-- Profile Setting -->
+                <div class="col-md-4">
+                    <h3 style="margin-bottom: 20px;">Profile</h3>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="Username">Username</label>
+                            <div class="col-sm-7">
+                                <p type="text" class="form-control form-control-static" id="Username" placeholder="">
+                               
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="Email">Email</label>
+                            <div class="col-sm-7"> 
+                                <input type="Email" class="form-control" id="Email" name="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="Name">Name</label>
+                            <div class="col-sm-7"> 
+                                <input type="text" class="form-control" id="Name" name="Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="Name">Surname</label>
+                            <div class="col-sm-7"> 
+                                <input type="text" class="form-control" id="Surname" name="Surname">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="WiFi">Wi-Fi Name</label>
+                            <div class="col-sm-7"> 
+                                <input type="text" class="form-control" id="WiFi" name="WiFi">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="WiFiP">Wi-Fi Password</label>
+                            <div class="col-sm-7"> 
+                                <input type="password" class="form-control" id="WiFiP" name="WiFiP">
+                            </div>
+                        </div>
+                        <div class="form-group"> 
+                            <div class="col-sm-11">
+                                <button id="saveProfile" type="button" class="btn btn-link-1 pull-right" onclick="ClickSaveP()">Save Change</button>
+                            </div>
+                        </div>
+                    </form>
+                </div> <!-- /Profile Setting -->
+                
+                <!-- Password Setting -->
+                <div class="col-md-4">
+                    <h3 style="margin-bottom: 20px;">Change Password</h3>
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="NewPwd1">New Password</label>
+                                <div class="col-sm-6"> 
+                                    <input type="password" class="form-control" id="NewPwd1" placeholder="Enter new password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="NewPwd2">Comfirm Password</label>
+                                <div class="col-sm-6"> 
+                                    <input type="password" class="form-control" id="NewPwd2" placeholder="Enter password again">
+                                </div>
+                            </div>
+                            <div class="form-group"> 
+                                <div class="col-sm-10">
+                                    <button id="savePassword" type="button" class="btn btn-link-1 pull-right" onclick="ClickSavePwd()">Save Change</button>
+                                </div>
+                            </div>
+                        </form>                
+                </div> <!-- /Password Setting -->
+                
+                
+                <!-- Devices Setting -->
+                <div class="col-md-4">
+                    <div class="panel panel-yellow">
+                        <div class="panel-heading">
+                            <strong>Devices</strong>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal" action="/action_page.php">
+                                <!-- Main Device -->
+                                <div class="form-group">
+                                    <label class="control-label col-sm-4" for="MainDevice">Main Device</label>
+                                    <div class="col-sm-7">
+                                        <p type="text" class="form-control form-control-static" id="Main"></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-4" for="Toy">Cat Toy</label>
+                                    <div class="col-sm-7"> 
+                                        <p type="text" class="form-control form-control-static" id="Toy"></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-4" for="Feeder">Cat Feeder</label>
+                                    <div class="col-sm-7"> 
+                                        <p type="text" class="form-control form-control-static" id="Feeder"></p>
+                                    </div>
+                                </div>
+                                <div class="form-group"> 
+                                    <div class="col-sm-3 pull-right">
+                                        <button id="Edit" type="button" class="btn btn-link-1" data-toggle="modal" data-target="#EditDevice">Edit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> <!-- /Device Setting -->
+                
+            </div> <!-- /row -->
+        </div>
+    
+    
+    
+    
+
+<!--         Feed&Play Modal -->
+<!--        <div id="feedplay" class="modal fade" role="dialog">-->
+<!--          <div class="modal-dialog modal-login">-->
+<!---->
+<!--             Modal content-->
+<!--            <div class="modal-content">-->
+<!--                <div class="modal-header modal-top">-->
+<!--                    <button type="button" class="close" data-dismiss="modal">×</button>-->
+<!--                    <span class="fa-stack fa-2x">-->
+<!--                      <i class="fas fa-circle fa-stack-2x"></i>-->
+<!--                      <i class="fas fa-paw fa-stack-1x fa-inverse"></i>-->
+<!--                    </span>-->
+<!--                    <h3 class="modal-title">Monitor</h3>-->
+<!--                    <p>Which device that you want to use?</p>-->
+<!--                </div>-->
+<!--                <div class="modal-body">-->
+<!--                    <form action="/action_page.php">-->
+<!--                        <div class="form-group">-->
+<!--                                <label>Select a main device</label>-->
+<!--                                <select class="form-control">-->
+<!--                                    <option>1</option>-->
+<!--                                    <option>2</option>-->
+<!--                                    <option>3</option>-->
+<!--                                    <option>4</option>-->
+<!--                                    <option>5</option>-->
+<!--                                </select>-->
+<!--                        </div>-->
+<!--                        -->
+<!--                      <div class="form-group text-right"> -->
+<!--                        <a type="button" class="btn btn-link-1" href="feed_play.html">OK</a>-->
+<!--                        <button type="button" class="btn btn-link-2" data-      dismiss="modal">Cancle</button>-->
+<!--                      </div>-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>  modal-content -->
+<!---->
+<!--          </div>  modal -->
+<!--        </div>  #Feed&Play-->
+
+        
+         <!-- AddDevice Modal -->
+        <div id="EditDevice" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-login">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header modal-top">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h3 class="modal-title">Edit your Device</h3>
+                    <p>Please input your main device code.</p>
+                </div>
+                
+                <div class="modal-body">
+                    <form action="/action_page.php">
+                        <!-- Main Device -->
+                        <div class="form-horizontal">
+                            <div class="form-group" >
+                                <label class="control-label col-sm-4" for="MainCode">Main Device Code:</label>
+                                <div class="col-sm-6">
+                                    <input type="Text" class="form-control" id="MainCode" name="MainCode" placeholder="Enter Main Device code">
+                                </div>
+<!--                                <button type="button" class="btn btn-link-1">Check</button>-->
+                            </div>
+                            <div class="form-group" >
+                                <label class="control-label col-sm-4" for="ToyCode">Cat Toy Code:</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="ToyCode" name="ToyCode"placeholder="Enter Main Device code">
+                                </div>
+                            </div>
+                            <div class="form-group" >
+                                <label class="control-label col-sm-4" for="FeederCode">Cat Feeder Code:</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="FeederCode" name="FeederCode"placeholder="Enter Main Device code">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Device Name -->
+<!--
+                        <div class="alert alert-success">
+                            <strong>Success!</strong> We found you devices, please enter name of device.
+                        </div>
+                        <div class="alert alert-danger">
+                            <strong>Danger!</strong> We can't find the devices, please check your code again.
+                        </div>
+-->
+                        <div class="form-horizontal">
+                            <div class="form-group" >
+                                <label class="control-label col-sm-4" for="MainName">Main Device Name:</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="MainName" name="MainName" placeholder="Enter Main Device Name">
+                                </div>
+                            </div>
+                            <div class="form-group" >
+                                <label class="control-label col-sm-4" for="ToyName">Cat Toy Name:</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="ToyName" name="ToyName" placeholder="Enter Cat Toy Name">
+                                </div>
+                            </div>
+                            <div class="form-group" >
+                                <label class="control-label col-sm-4" for="FeederName">Cat Feeder Name:</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" id="FeederName" name="FeederName" placeholder="Enter Cat Feeder Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group text-right line"> 
+                            <button type="button" class="btn btn-link-1" onclick="ClickSave()" >Save</button>
+                            <button type="button" class="btn btn-link-2" data-dismiss="modal">Cancle</button>
+                        </div>
+                    </form>
+                </div>
+            </div> <!-- modal-content -->
+
+          </div> <!-- modal -->
+        </div> <!-- #AddDevice-->
+    
+    
+        
+    </body>
+    
+    <!-- Javascript -->
+
+        <!-- Bootstrap core JS -->
+        <script src="vendor/js/jquery.min.js"></script>
+        <script src="vendor/js/bootstrap.min.js"></script>
+        
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-database.js"></script>
+<!--        <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-firestore.js"></script>-->
+        <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDXkTpweZYC_yczAAPYcSnPbhAoCgYaLho",
+                authDomain: "catoi-3606.firebaseapp.com",
+                databaseURL: "https://catoi-3606.firebaseio.com",
+                projectId: "catoi-3606",
+                storageBucket: "catoi-3606.appspot.com",
+                messagingSenderId: "657368200146"
+            };
+            firebase.initializeApp(config);
+            
+        </script>
+    
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+        
+        <!-- Event -->
+        <script src="js/setting_events.js"></script>
+       
+    
+
+</html>

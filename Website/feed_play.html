@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="img/Logo-B05.png">
+        <title>CAToi - Monitoring</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="font-awesome_new/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim|Montserrat:400,500,700">
+        <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+        
+        <!-- Custom CSS-->
+        <link rel="stylesheet" href="css/catoi.css">
+        <link rel="stylesheet" href="css/content-css.css">       
+        
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    
+    <body>
+
+    	<!-- navigation -->
+    	<nav class="navbar navbar-inverse">
+    		<div class="container-fluid">
+    			<div class="navbar-header">
+				    <a class="navbar-brand" href="#" title="Smart Interactive Cat Toy">
+				        <img style="max-width:120px;"
+				             src="img/Logo-W-02_sm.png">
+				    </a>
+				</div>   
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="fa-stack">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-user fa-stack-1x fa-inverse icon-user"></i>
+                            </span>
+                            &nbsp;Yelly
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="settings.html"><i class="fa fa-cog fa-fw"></i>&nbsp;Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#"><i class="fa fa-power-off fa-fw"></i>&nbsp;Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>            
+    		</div>
+    	</nav>
+        
+        <!-- Menu bar -->
+         <div class="navbar navbar-default menu-bar">
+            <div class="container">
+                <div class="col-md-12" style="padding-left: 250px;">
+                    <ul class="nav navbar-nav">
+                        <li class="menu-item">
+                            <a href="db.html"><i class="fa fa-chart-bar"></i>&nbsp;&nbsp;Dashboard</a>
+                        </li>
+                        <li class="menu-item active">
+                            <a href="#"><i class="fa fa-paw"></i>&nbsp;&nbsp;Monitor</a>
+                        </li>
+                         <li class="menu-item">
+                            <a href="gallery.html"><i class="fa fa-images"></i>&nbsp;&nbsp;Gallery</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="settings.html"><i class="fa fa-cog"></i>&nbsp;&nbsp;Settings</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="help.html"><i class="fa fa-question-circle"></i>&nbsp;&nbsp;Help</a>
+                        </li>
+                    </ul>
+                </div>         
+            </div> 
+        </div> <!-- /Menu bar -->
+        
+        <!-- Content --> 
+        <div class="container-fluid">    
+            <div class="row">
+                <div class="col-md-12">   
+                    <h2 class="page-header"><i class="fa fa-paw"></i> Monitor&nbsp;&nbsp;<small></small></h2>
+                    <!-- Camera -->
+                    <div class="col-md-8">
+                        <div href="#" class="thumbnail embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="..."></iframe>
+                        </div> 
+                    </div>
+                    <!-- Control Panal -->
+                    <div class="col-md-4">
+                        <!-- Device Description -->
+                        <div class="row col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-body" id="DeviceName">
+<!--                                    <strong>Device:</strong> Bedroom-->
+<!--                                    <button type="button" class="btn btn-link-1 pull-right" data-toggle="modal" data-target="#feedplay">Change</button>-->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Toy Control -->
+                        <div class="row col-md-12">
+                            <div class="panel panel-yellow">
+                                <div class="panel-heading">
+                                    <i class="fas fa-gamepad"></i>&nbsp;&nbsp;<strong>Toy Controller</strong>
+                                </div>
+                                <div class="panel-body" style="text-align: center;">
+                                    <button id="toybtn01" type="button" class="btn btn-link-3 btn-sq" onclick="ControlToy01()">1</button>&nbsp;&nbsp;
+                                    <button id="toybtn02" type="button" class="btn btn-link-3 btn-sq" onclick="ControlToy02()">2</button>&nbsp;&nbsp;
+                                    <button id="toybtn03" type="button" class="btn btn-link-3 btn-sq" onclick="ControlToy03()">5</button>&nbsp;&nbsp;
+                                    <button id="toybtn04" type="button" class="btn btn-link-3 btn-sq" onclick="ControlToy04()">10</button>&nbsp;&nbsp;
+                                    
+<!--
+                                    <button id="toyLeft" type="button" class="btn btn-link-3 btn-sq" onclick="ControlLeft()"><i class="fas fa-arrow-alt-circle-left fa-2x"></i></button>&nbsp;&nbsp;
+                                    <button id="toyZero" type="button" class="btn btn-link-3 btn-lg" onclick="ControlZero()">Set Zero</button>&nbsp;&nbsp;
+                                    <button id="toyRight" type="button" class="btn btn-link-3 btn-sq" onclick="ControlRight()"><i class="fas fa-arrow-alt-circle-right fa-2x"></i></button>
+-->
+                                    
+                                </div>
+<!--
+                                <div class="panel-footer" id="Pos">
+                                    Position: 0
+                                </div>
+-->
+                            </div>
+                        </div>
+                        <!-- Camera & Feeder Control -->
+                        <div class="row col-md-12">
+                            <div class="row col-sm-5">
+                                <div class="panel panel-yellow">
+                                    <div class="panel-heading">
+                                        <i class="fas fa-camera"></i>&nbsp;&nbsp;<strong>Camera</strong>
+                                    </div>
+                                    <div class="panel-body" style="text-align: center;">
+                                        <button id="camera" type="button" class="btn btn-link-3 btn-lg" onclick="ClickCamera()"><i class="fab fa-instagram fa-2x"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row col-sm-8" style="margin-left: 10px;">
+                                <div class="panel panel-yellow">
+                                    <div class="panel-heading">
+                                        <i class="fas fa-utensils"></i>&nbsp;&nbsp;<strong>Feeder</strong>
+                                    </div>
+                                    <div class="panel-body" style="text-align: center;">
+                                        <button id="feed" type="button" class="btn btn-link-3 btn-lg" onclick="ClickFeed()">Feed</button>
+                                    </div>
+                                    <div class="panel-footer" id="LastedFeed">
+                                        Lasted Feed:
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+                    
+                
+            
+            
+            </div>
+        </div>
+    
+    
+        <!-- Feed&Play Modal -->
+        <div id="feedplay" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-login">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header modal-top">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <span class="fa-stack fa-2x">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-paw fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h3 class="modal-title">Monitor</h3>
+                    <p>Which device that you want to use?</p>
+                </div>
+                <div class="modal-body">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                                <label>Select a main device</label>
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                        </div>
+                      <div class="form-group text-right"> 
+                        <a type="button" class="btn btn-link-1" href="feed_play.html">OK</a>
+                        <button type="button" class="btn btn-link-2" data-dismiss="modal">Cancle</button>
+                      </div>
+                    </form>
+                </div>
+            </div> <!-- modal-content -->
+
+          </div> <!-- modal -->
+        </div> <!-- #Feed&Play-->
+        
+    
+    </body>
+    
+    <!-- Javascript -->
+
+        <!-- Bootstrap core JS -->
+        <script src="vendor/js/jquery.min.js"></script>
+        <script src="vendor/js/bootstrap.min.js"></script>
+    
+        <!-- Firebase -->    
+        <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-database.js"></script>
+<!--        <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-firestore.js"></script>-->
+        <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDXkTpweZYC_yczAAPYcSnPbhAoCgYaLho",
+                authDomain: "catoi-3606.firebaseapp.com",
+                databaseURL: "https://catoi-3606.firebaseio.com",
+                projectId: "catoi-3606",
+                storageBucket: "catoi-3606.appspot.com",
+                messagingSenderId: "657368200146"
+            };
+            firebase.initializeApp(config);
+            
+        </script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+    
+        <!-- Event -->
+        <script src="js/feed_play_events.js"></script>
+    
+
+</html>
